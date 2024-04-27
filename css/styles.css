@@ -1,3 +1,9 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #252525;
+    --tertiary-color: #00A650;
+}
+
 * {
     margin: 0;
     padding: 0;
