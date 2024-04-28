@@ -18,11 +18,17 @@ body {
 }
 
 img {
-    max-width: 100vmin;
+    max-width: 50vmin;
+    min-width: 25vmax;
+}
+
+#odin {
+    max-width: 75vmin;
+    min-width: 50vmax;
 }
 
 #roasted-boar {
-
+    
 }
 
 #magic-mead {
