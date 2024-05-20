@@ -1,6 +1,49 @@
+/* //// ROOT VARIABLES */
+
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+
+/* //// GLOBAL STYLE */
+
+
+/* || RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
+
+/* || TIPOGRAPHY */
+
+html {
+    font-size: 16px; /* Sets the base font size to 16px */
+}
+
+body {
+    font-family: "PT Serif", serif;
+}
+
+
+/* //// HEADER + NAV  */
+
+#logo {
+    font-family: "Metamorphous", "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* //// MAIN  */
+
+
+
+/* //// FOOTER  */
+
+
+
+/* //// MEDIA QUERIES  */
