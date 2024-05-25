@@ -33,15 +33,17 @@ body {
 
 /* //// HEADER + NAV  */
 
-#logo {
+#logo a {
     font-family: "Metamorphous", "PT Serif", serif;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 900;
     font-style: normal;
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
 header {
-    background-color: red;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +51,18 @@ header {
     padding: 1em 2em;
 }
 
-header .nav-links {}
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+header .nav-links a {
+    color: var(--secondary-color)
+}
 
 /* //// MAIN  */
 
