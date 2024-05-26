@@ -1,8 +1,20 @@
 /* //// ROOT VARIABLES */
 
 :root{
-    --primary-color: white;
-    --secondary-color: black;
+    --light-color-scroll:  rgba(255,219,189,1);
+    --dark-color-scroll: rgba(215,167,147,1);
+    --ink-color: black;
+
+    --scroll-color-outside: -webkit-linear-gradient(
+        -90deg, 
+        var(--light-color-scroll) 0%, 
+        var(--dark-color-scroll) 100%);
+
+    --scroll-color-inside: -webkit-linear-gradient(
+        -90deg, 
+        var(--dark-color-scroll) 0%, 
+        var(--light-color-scroll) 50%,
+        var(--dark-color-scroll) 100%);
 }
 
 
@@ -15,9 +27,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+img {
+    mix-blend-mode: multiply;
+}
 
 /* || TIPOGRAPHY */
 
@@ -27,7 +46,7 @@ html {
 
 body {
     font-family: "PT Serif", serif;
-    background-color: var(--primary-color);
+    background: var(--scroll-color-inside);
 }
 
 
@@ -38,17 +57,17 @@ body {
     font-size: large;
     font-weight: 900;
     font-style: normal;
-    color: var(--secondary-color);
     cursor: pointer;
 }
 
 header {
-    background-color: var(--primary-color);
+    background: var(--scroll-color-outside);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4em;
     padding: 1em 2em;
+    box-shadow: -1px 22px 41px 0px rgba(0,0,0,0.21);
 }
 
 header .nav-links {
